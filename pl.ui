@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1067</width>
+    <height>919</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>260</y>
+      <width>1031</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>Flt</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Team</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Div</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Bwt</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>WtCls</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Lot#</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Sq Rack</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>SQ-1</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>SQ-2</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>SQ-3</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Best Sq</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>BP Rack</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>BP-1</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>BP-2</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>BP-3</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Best BP</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Sub-total</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>DL-1</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>DL-2</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>DL-3</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Best DL</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Total</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="LifterNameLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>431</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>30</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Lifter Name</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="LiftSelected">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>120</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>Squat 1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Squat 2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Squat 3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Bench 1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Bench 2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Bench 3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Deadlift 1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Deadlift 2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Deadlift 3</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="RackLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>220</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Rack 10</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Weight_kg">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>100</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>100 Kg</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Weight_lb">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>160</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>220 Lb</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="LoadDataButton">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>190</y>
+      <width>98</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Load Data</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="GoodButton">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>110</y>
+      <width>98</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(68, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>Good Lift</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BadButton">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>150</y>
+      <width>98</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 0, 4);</string>
+    </property>
+    <property name="text">
+     <string>Bad Lift</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="FlightSelected">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>A</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>E</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>F</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>G</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>H</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>I</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>J</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>K</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>L</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="kg25">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>40</y>
+      <width>66</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="kg20">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>70</y>
+      <width>66</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="kg15">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>100</y>
+      <width>66</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="kg10">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>130</y>
+      <width>66</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="kg5">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>150</y>
+      <width>66</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="kg2">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>170</y>
+      <width>66</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="kg1">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>190</y>
+      <width>66</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1067</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

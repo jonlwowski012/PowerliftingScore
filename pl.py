@@ -1,0 +1,152 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'pl.ui'
+#
+# Created: Fri Nov 18 22:36:06 2016
+#      by: PyQt4 UI code generator 4.10.4
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt4 import QtCore, QtGui
+
+try:
+    _fromUtf8 = QtCore.QString.fromUtf8
+except AttributeError:
+    def _fromUtf8(s):
+        return s
+
+try:
+    _encoding = QtGui.QApplication.UnicodeUTF8
+    def _translate(context, text, disambig):
+        return QtGui.QApplication.translate(context, text, disambig, _encoding)
+except AttributeError:
+    def _translate(context, text, disambig):
+        return QtGui.QApplication.translate(context, text, disambig)
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName(_fromUtf8("MainWindow"))
+        MainWindow.resize(1067, 919)
+        self.centralwidget = QtGui.QWidget(MainWindow)
+        self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
+        self.tableWidget = QtGui.QTableWidget(self.centralwidget)
+        self.tableWidget.setGeometry(QtCore.QRect(10, 260, 1031, 591))
+        self.tableWidget.setObjectName(_fromUtf8("tableWidget"))
+        self.tableWidget.setColumnCount(11)
+        self.tableWidget.setRowCount(0)
+        item = QtGui.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(0, item)
+        item = QtGui.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(1, item)
+        item = QtGui.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(2, item)
+        item = QtGui.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(3, item)
+        item = QtGui.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(4, item)
+        item = QtGui.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(5, item)
+        item = QtGui.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(6, item)
+        item = QtGui.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(7, item)
+        item = QtGui.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(8, item)
+        item = QtGui.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(9, item)
+        item = QtGui.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(10, item)
+        self.LifterNameLabel = QtGui.QLabel(self.centralwidget)
+        self.LifterNameLabel.setGeometry(QtCore.QRect(20, 10, 431, 111))
+        font = QtGui.QFont()
+        font.setPointSize(30)
+        self.LifterNameLabel.setFont(font)
+        self.LifterNameLabel.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.LifterNameLabel.setScaledContents(False)
+        self.LifterNameLabel.setAlignment(QtCore.Qt.AlignCenter)
+        self.LifterNameLabel.setObjectName(_fromUtf8("LifterNameLabel"))
+        self.LiftSelected = QtGui.QComboBox(self.centralwidget)
+        self.LiftSelected.setGeometry(QtCore.QRect(10, 120, 141, 41))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.LiftSelected.setFont(font)
+        self.LiftSelected.setObjectName(_fromUtf8("LiftSelected"))
+        self.LiftSelected.addItem(_fromUtf8(""))
+        self.LiftSelected.addItem(_fromUtf8(""))
+        self.LiftSelected.addItem(_fromUtf8(""))
+        self.RackLabel = QtGui.QLabel(self.centralwidget)
+        self.RackLabel.setGeometry(QtCore.QRect(20, 190, 121, 21))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.RackLabel.setFont(font)
+        self.RackLabel.setObjectName(_fromUtf8("RackLabel"))
+        self.RackLabel_2 = QtGui.QLabel(self.centralwidget)
+        self.RackLabel_2.setGeometry(QtCore.QRect(340, 110, 151, 51))
+        font = QtGui.QFont()
+        font.setPointSize(32)
+        self.RackLabel_2.setFont(font)
+        self.RackLabel_2.setObjectName(_fromUtf8("RackLabel_2"))
+        self.RackLabel_3 = QtGui.QLabel(self.centralwidget)
+        self.RackLabel_3.setGeometry(QtCore.QRect(340, 180, 151, 51))
+        font = QtGui.QFont()
+        font.setPointSize(32)
+        self.RackLabel_3.setFont(font)
+        self.RackLabel_3.setObjectName(_fromUtf8("RackLabel_3"))
+        self.LoadDataButton = QtGui.QPushButton(self.centralwidget)
+        self.LoadDataButton.setGeometry(QtCore.QRect(190, 190, 98, 27))
+        self.LoadDataButton.setObjectName(_fromUtf8("LoadDataButton"))
+        self.GoodButton = QtGui.QPushButton(self.centralwidget)
+        self.GoodButton.setGeometry(QtCore.QRect(190, 110, 98, 27))
+        self.GoodButton.setStyleSheet(_fromUtf8("background-color: rgb(68, 255, 0);"))
+        self.GoodButton.setObjectName(_fromUtf8("GoodButton"))
+        self.BadButton = QtGui.QPushButton(self.centralwidget)
+        self.BadButton.setGeometry(QtCore.QRect(190, 150, 98, 27))
+        self.BadButton.setStyleSheet(_fromUtf8("background-color: rgb(255, 0, 4);"))
+        self.BadButton.setObjectName(_fromUtf8("BadButton"))
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtGui.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1067, 25))
+        self.menubar.setObjectName(_fromUtf8("menubar"))
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtGui.QStatusBar(MainWindow)
+        self.statusbar.setObjectName(_fromUtf8("statusbar"))
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow", None))
+        item = self.tableWidget.horizontalHeaderItem(0)
+        item.setText(_translate("MainWindow", "Flt", None))
+        item = self.tableWidget.horizontalHeaderItem(1)
+        item.setText(_translate("MainWindow", "Name", None))
+        item = self.tableWidget.horizontalHeaderItem(2)
+        item.setText(_translate("MainWindow", "Team", None))
+        item = self.tableWidget.horizontalHeaderItem(3)
+        item.setText(_translate("MainWindow", "Div", None))
+        item = self.tableWidget.horizontalHeaderItem(4)
+        item.setText(_translate("MainWindow", "Bwt", None))
+        item = self.tableWidget.horizontalHeaderItem(5)
+        item.setText(_translate("MainWindow", "WtCls", None))
+        item = self.tableWidget.horizontalHeaderItem(6)
+        item.setText(_translate("MainWindow", "Lot#", None))
+        item = self.tableWidget.horizontalHeaderItem(7)
+        item.setText(_translate("MainWindow", "Sq Rack", None))
+        item = self.tableWidget.horizontalHeaderItem(8)
+        item.setText(_translate("MainWindow", "SQ-1", None))
+        item = self.tableWidget.horizontalHeaderItem(9)
+        item.setText(_translate("MainWindow", "SQ-2", None))
+        item = self.tableWidget.horizontalHeaderItem(10)
+        item.setText(_translate("MainWindow", "SQ-3", None))
+        self.LifterNameLabel.setText(_translate("MainWindow", "Lifter Name", None))
+        self.LiftSelected.setItemText(0, _translate("MainWindow", "Squat 1", None))
+        self.LiftSelected.setItemText(1, _translate("MainWindow", "Squat 2", None))
+        self.LiftSelected.setItemText(2, _translate("MainWindow", "Squat 3", None))
+        self.RackLabel.setText(_translate("MainWindow", "Rack 10", None))
+        self.RackLabel_2.setText(_translate("MainWindow", "100 Kg", None))
+        self.RackLabel_3.setText(_translate("MainWindow", "220 Lb", None))
+        self.LoadDataButton.setText(_translate("MainWindow", "Load Data", None))
+        self.GoodButton.setText(_translate("MainWindow", "Good Lift", None))
+        self.BadButton.setText(_translate("MainWindow", "Bad Lift", None))
+
