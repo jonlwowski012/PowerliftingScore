@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1067</width>
+    <width>1208</width>
     <height>919</height>
    </rect>
   </property>
@@ -19,10 +19,49 @@
      <rect>
       <x>10</x>
       <y>260</y>
-      <width>1031</width>
-      <height>591</height>
+      <width>1161</width>
+      <height>521</height>
      </rect>
     </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOn</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOn</enum>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::SingleSelection</enum>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <attribute name="horizontalHeaderCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>50</number>
+    </attribute>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>25</number>
+    </attribute>
+    <attribute name="horizontalHeaderStretchLastSection">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>25</number>
+    </attribute>
+    <attribute name="verticalHeaderHighlightSections">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="verticalHeaderMinimumSectionSize">
+     <number>25</number>
+    </attribute>
     <column>
      <property name="text">
       <string>Flt</string>
@@ -403,8 +442,8 @@
    <widget class="QLabel" name="kg25">
     <property name="geometry">
      <rect>
-      <x>600</x>
-      <y>40</y>
+      <x>480</x>
+      <y>50</y>
       <width>66</width>
       <height>17</height>
      </rect>
@@ -416,8 +455,8 @@
    <widget class="QLabel" name="kg20">
     <property name="geometry">
      <rect>
-      <x>600</x>
-      <y>70</y>
+      <x>480</x>
+      <y>80</y>
       <width>66</width>
       <height>17</height>
      </rect>
@@ -429,8 +468,8 @@
    <widget class="QLabel" name="kg15">
     <property name="geometry">
      <rect>
-      <x>600</x>
-      <y>100</y>
+      <x>480</x>
+      <y>110</y>
       <width>66</width>
       <height>17</height>
      </rect>
@@ -442,8 +481,8 @@
    <widget class="QLabel" name="kg10">
     <property name="geometry">
      <rect>
-      <x>600</x>
-      <y>130</y>
+      <x>480</x>
+      <y>140</y>
       <width>66</width>
       <height>17</height>
      </rect>
@@ -455,8 +494,8 @@
    <widget class="QLabel" name="kg5">
     <property name="geometry">
      <rect>
-      <x>600</x>
-      <y>150</y>
+      <x>480</x>
+      <y>160</y>
       <width>66</width>
       <height>17</height>
      </rect>
@@ -468,8 +507,8 @@
    <widget class="QLabel" name="kg2">
     <property name="geometry">
      <rect>
-      <x>600</x>
-      <y>170</y>
+      <x>480</x>
+      <y>180</y>
       <width>66</width>
       <height>17</height>
      </rect>
@@ -481,8 +520,8 @@
    <widget class="QLabel" name="kg1">
     <property name="geometry">
      <rect>
-      <x>600</x>
-      <y>190</y>
+      <x>480</x>
+      <y>200</y>
       <width>66</width>
       <height>17</height>
      </rect>
@@ -497,12 +536,31 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1067</width>
+     <width>1208</width>
      <height>25</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuLoad">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionLoad"/>
+   </widget>
+   <addaction name="menuLoad"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionLoad">
+   <property name="text">
+    <string>Load</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

@@ -1,0 +1,26 @@
+import sys,platform
+from cx_Freeze import setup, Executable
+
+def getTargetName():
+    myOS = platform.system()
+    if myOS == 'Linux':
+        return "PowerliftingScoring"
+    elif myOS == 'Windows':
+        return "PowerliftingScoring.exe"
+    else:   
+        return "PowerliftingScoring.dmg"
+
+
+base = None
+if sys.platform == "win32":
+    base = "Win32GUI"
+
+exe = Executable(script = "pl_gui.py", base=base, targetName = getTargetName())
+
+build_exe_options = dict(packages = ["re","sip"], includes = ["modules"])
+
+setup(  name = "setup",
+        version = "1.0",
+        description = "GUI Application!",
+        options = {"build_exe": build_exe_options},
+        executables = [exe])
